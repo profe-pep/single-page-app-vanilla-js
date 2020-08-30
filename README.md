@@ -4,11 +4,11 @@
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/single-page-app-vanilla-js)](https://github.com/MichaelCurrin/single-page-app-vanilla-js/tags/?include_prereleases&sort=semver)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue)](#license)
 
-<p align="center">
+<div align="center">
 
 [![View site GH Pages](https://img.shields.io/badge/View_site-GH_Pages-green?style=for-the-badge)](https://michaelcurrin.github.io/single-page-app-vanilla-js/)
 
-</p>
+</div>
 
 _Badges created with [Badge generator](https://michaelcurrin.github.io/badge-generator/badge-generator) tool._
 
