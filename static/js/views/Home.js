@@ -16,6 +16,13 @@ export default class extends AbstractView {
         <p>
             <a href="${u('/posts')}" data-link>View recent posts</a>.
         </p>
+
+        <br>
+        <br>
+
+        <p>
+          GitHub repo: <a href="https://michaelcurrin.github.io/single-page-app-vanilla-js/">michaelcurrin.github.io/single-page-app-vanilla-js</a>.
+        </p>
     `;
   }
 }
