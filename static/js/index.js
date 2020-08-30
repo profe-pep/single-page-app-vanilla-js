@@ -1,4 +1,4 @@
-import Dashboard from './views/Dashboard.js';
+import Home from './views/Home.js';
 import Posts from './views/Posts.js';
 import PostView from './views/PostView.js';
 import Settings from './views/Settings.js';
@@ -28,7 +28,7 @@ const navigateTo = url => {
 
 const router = async () => {
   const routes = [
-    { path: u('/'), view: Dashboard },
+    { path: u('/'), view: Home },
     { path: u('/posts'), view: Posts },
     { path: u('/posts/:id'), view: PostView },
     { path: u('/settings'), view: Settings }
