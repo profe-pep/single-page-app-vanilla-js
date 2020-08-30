@@ -1,4 +1,12 @@
-# single-page-app-vanilla-js
+# Vanillin
+> Simple-Page App built with Node.js and no dependencies
 
-Taken from my YouTube Tutorial:
-https://www.youtube.com/watch?v=6BozpmSjk-Y
+
+See [Vanillin - Wikipedia](https://en.wikipedia.org/wiki/Vanillin) page.
+
+> It is the primary component of the extract of the vanilla bean
+
+
+## License
+
+Forked from [dcode-youtube/single-page-app-vanilla-js](https://github.com/dcode-youtube/single-page-app-vanilla-js)
