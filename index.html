@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Single Page App</title>
 
-    <link rel="stylesheet" href="/static/css/index.css">
+    <!-- Because of running on GH Pages and the way this SPA works, the main CSS and JS files have to be relative. Putting a prefix here breaks local usage. -->
+    <link rel="stylesheet" href="static/css/index.css">
 </head>
 
 <body>
@@ -18,7 +19,6 @@
     </nav>
 
     <div id="app"></div>
-    <!-- Because of running on GH Pages and the way this SPA works, this has to be relative. -->
     <script type="module" src="static/js/index.js"></script>
 </body>
 
