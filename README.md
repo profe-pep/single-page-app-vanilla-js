@@ -1,6 +1,14 @@
 # Vanillin
 > Simple-Page App built with Node.js and no dependencies
 
+[![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/single-page-app-vanilla-js)](https://github.com/MichaelCurrin/single-page-app-vanilla-js/tags/?include_prereleases&sort=semver)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue)](#license)
+
+<p align="center">
+
+[![View site GH Pages](https://img.shields.io/badge/View_site-GH_Pages-green?style=for-the-badge)](https://michaelcurrin.github.io/single-page-app-vanilla-js/)
+
+</p>
 
 ## About
 
@@ -8,9 +16,9 @@ This app works with HTML, CSS and plain JS.
 
 There are no dependencies.
 
-There is no build step. Just static assets - [index.html](/index.html) and the [static](/static/) directory.
+The site is served as static site on [GitHub Pages](https://pages.github.com/).
 
-The site is served as static assets on GitHub Pages. Unfortunately on GH Pages you have to serve from the project root or `docs`, otherwise this app would have been added to a folder like `public` or `frontend`.
+There is no build step. Just static assets - [index.html](/index.html) and the [static](/static/) directory. Unfortunately, on GH Pages you have to serve from the project root or `docs`, otherwise this app would have been added to a folder like `public` or `frontend`.
 
 
 ## Usage
@@ -24,16 +32,20 @@ Open the browser at your localhost URL without a subpath. e.g.
 
 - https://localhost:5500
 
-And then click the Home button to get to:
+The pages are served under this subpath, but unfortunately you can't head here directly. Because of how this app's routing works when setup to run for GH Pages.
 
 - http://localhost:8000/single-page-app-vanilla-js/
 
-Note you can't skip straight to the second URL because of how this app's routing works when setup to run for GH Pages.
 
 
 ## Deploy
 
 Just copy this project as fork and deploy to GH Pages using your repo's Settings. There is no build step needed and so no GH Actions workflow.
+
+View the deployed site:
+
+- https://michaelcurrin.github.io/single-page-app-vanilla-js/
+
 
 
 ## Limitations
