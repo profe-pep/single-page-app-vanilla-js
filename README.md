@@ -10,6 +10,9 @@
 
 </p>
 
+_Badges created with [Badge generator](https://michaelcurrin.github.io/badge-generator/badge-generator) tool._
+
+
 ## About
 
 This app works with HTML, CSS and plain JS.
