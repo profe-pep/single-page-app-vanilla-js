@@ -1,4 +1,5 @@
 import AbstractView from './AbstractView.js';
+import { u } from '../lib.js';
 
 export default class extends AbstractView {
   constructor(params) {
@@ -13,10 +14,10 @@ export default class extends AbstractView {
       <h1>Posts</h1>
       <ul>
         <li>
-          <a href="/posts/1" data-link>#1 - How to build a Node.js app</a>
+          <a href="${u('/posts/1')}" data-link>#1 - How to build a Node.js app</a>
         </li>
         <li>
-          <a href="/posts/2" data-link>#2 - How to build a GH Pages site</a>
+          <a href="${u('/posts/2')}" data-link>#2 - How to build a GH Pages site</a>
         </li>
       </ul>
     `;
