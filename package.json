@@ -3,6 +3,6 @@
   "description": "Simple-Page App built with Node.js and no dependencies",
   "author": "MichaelCurrin",
   "license": "MIT",
-  "version": "1.1.0",
+  "version": "0.1.0",
   "main": "index.js"
 }
