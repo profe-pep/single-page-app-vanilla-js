@@ -23,6 +23,8 @@ The site is served as static site on [GitHub Pages](https://pages.github.com/).
 
 There is no build step. Just static assets - [index.html](/index.html) and the [static](/static/) directory. Unfortunately, on GH Pages you have to serve from the project root or `docs`, otherwise this app would have been added to a folder like `public` or `frontend`.
 
+This repo is forked from [dcode-youtube/single-page-app-vanilla-js](https://github.com/dcode-youtube/single-page-app-vanilla-js). I like the idea of building a SPA from scratch and thought the JS and CSS might come in useful sometime. Regarding my contributions on my fork, I improved the posts section, changed up the routing so app can run on a project subpath on GitHub Pages and added to the docs.
+
 
 ## Usage
 > How to run locally
