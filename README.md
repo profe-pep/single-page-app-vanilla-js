@@ -57,6 +57,9 @@ This repo is forked from [dcode-youtube/single-page-app-vanilla-js](https://gith
 
 Regarding my contributions on my fork, I improved the posts section, added to the docs and changed up the routing so app can run on a project subpath on GitHub Pages. This last part involved moving all content to the project root or `static` directory and using the project name as prefix in all URLs, to match what GH Pages will do expect (e.g. `/posts` needs to be `/single-page-app-vanilla-js/posts`).
 
+I also removed use Express and `server.js` since I documented an alternate way of serving the project locally, without an `npm install` step.
+
+
 ### Project name
 
 I named the project _Vanillin_ in keeping with the vanilla JS approach of the original project.
