@@ -51,12 +51,11 @@ View the deployed site:
 
 ## Notes
 
-
 ### Background
 
-This repo is forked from [dcode-youtube/single-page-app-vanilla-js](https://github.com/dcode-youtube/single-page-app-vanilla-js). I discovered it through this [dev.to post](https://dev.to/dcodeyt/building-a-single-page-app-without-frameworks-hl9). I like the idea of building a SPA from scratch and thought the JS and CSS might come in useful sometime.
+This repo is forked from [dcode-youtube/single-page-app-vanilla-js](https://github.com/dcode-youtube/single-page-app-vanilla-js). I discovered it through this [dev.to post](https://dev.to/dcodeyt/building-a-single-page-app-without-frameworks-hl9). I liked the idea of building a SPA from scratch and thought the JS and CSS might come in useful sometime.
 
-Regarding my contributions on my fork, I improved the posts section, changed up the routing so app can run on a project subpath on GitHub Pages and added to the docs.
+Regarding my contributions on my fork, I improved the posts section, added to the docs and changed up the routing so app can run on a project subpath on GitHub Pages. This last part involved moving all content to the project root or `static` directory and using the project name as prefix in all URLs, to match what GH Pages will do expect (e.g. `/posts` needs to be `/single-page-app-vanilla-js/posts`).
 
 ### Project name
 
