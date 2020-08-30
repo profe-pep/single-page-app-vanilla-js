@@ -24,7 +24,7 @@ Open the browser at your localhost URL without a subpath. e.g.
 
 - https://localhost:5500
 
-And then click the Dashboard button to get to:
+And then click the Home button to get to:
 
 - http://localhost:8000/single-page-app-vanilla-js/
 
