@@ -29,13 +29,13 @@ There is no build step. Just static assets - [index.html](/index.html) and the [
 
 Clone this repo or your fork of it.
 
-Start a local dev server in the repo root. See [gist](https://gist.github.com/MichaelCurrin/1a6116a4e0918c8468dc7e1a701a5f95) for ideas.
+Start a local dev server in the repo root - see my [gist](https://gist.github.com/MichaelCurrin/1a6116a4e0918c8468dc7e1a701a5f95) for ideas.
 
-Open the browser at your localhost URL without a subpath. e.g.
+Open the browser at your localhost URL _without_ a subpath. e.g.
 
 - https://localhost:5500
 
-The pages are served under this subpath, but unfortunately you can't head here directly. Because of how this app's routing works when setup to run for GH Pages.
+The pages are served under this subpath, but unfortunately you can't head here directly, because of how this app's routing works, when setup to run for GH Pages.
 
 - http://localhost:8000/single-page-app-vanilla-js/
 
