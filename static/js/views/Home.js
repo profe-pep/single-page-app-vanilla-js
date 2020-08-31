@@ -21,7 +21,7 @@ export default class extends AbstractView {
         <br>
 
         <p>
-          GitHub repo: <a href="https://github.com/michaelcurrin.github/single-page-app-vanilla-js">michaelcurrin.github/single-page-app-vanilla-js</a>.
+          GitHub repo: <a href="https://github.com/michaelcurrin/single-page-app-vanilla-js">michaelcurrin/single-page-app-vanilla-js</a>.
         </p>
     `;
   }
