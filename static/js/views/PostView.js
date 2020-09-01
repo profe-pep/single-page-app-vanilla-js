@@ -3,8 +3,7 @@ import AbstractView from './AbstractView.js';
 export default class extends AbstractView {
   constructor(params) {
     super(params);
-    const { id } = params;
-    this.postID = id;
+    this.postID = params.id;
     this.setTitle('Viewing Post');
   }
 
