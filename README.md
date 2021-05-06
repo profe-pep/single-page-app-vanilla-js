@@ -1,12 +1,12 @@
 # Vanillin
-> Simple-Page App built with Node.js and no dependencies
+> Single-Page App built with Node.js and no dependencies
 
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/single-page-app-vanilla-js)](https://github.com/MichaelCurrin/single-page-app-vanilla-js/tags/?include_prereleases&sort=semver)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue)](#license)
 
 <div align="center">
 
-[![View site GH Pages](https://img.shields.io/badge/View_site-GH_Pages-green?style=for-the-badge)](https://michaelcurrin.github.io/single-page-app-vanilla-js/)
+[![View site GH Pages](https://img.shields.io/badge/View_site-GH_Pages-2ea44f?style=for-the-badge)](https://michaelcurrin.github.io/single-page-app-vanilla-js/)
 
 </div>
 
