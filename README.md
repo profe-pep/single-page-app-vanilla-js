@@ -1,8 +1,11 @@
 # Vanillin
-> Single-Page App built with Node.js and no dependencies
+> Single-Page App built with Node.js and no dependencies - GH Pages support added on this fork
 
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/single-page-app-vanilla-js)](https://github.com/MichaelCurrin/single-page-app-vanilla-js/tags/?include_prereleases&sort=semver)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue)](#license)
+[![License](https://img.shields.io/badge/License-MIT-blue)](#license)
+
+[![Hosted with GH Pages](https://img.shields.io/badge/Hosted_with-GitHub_Pages-blue?logo=github&logoColor=white)](https://pages.github.com/)
+
 
 <div align="center">
 
@@ -10,7 +13,7 @@
 
 </div>
 
-_Badges created with [Badge generator](https://michaelcurrin.github.io/badge-generator/badge-generator) tool._
+_Badges created with [Badge Generator](https://michaelcurrin.github.io/badge-generator/badge-generator)._
 
 
 ## About
