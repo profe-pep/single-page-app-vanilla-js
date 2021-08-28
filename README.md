@@ -6,14 +6,22 @@
 
 [![Hosted with GH Pages](https://img.shields.io/badge/Hosted_with-GitHub_Pages-blue?logo=github&logoColor=white)](https://pages.github.com/)
 
+_Badges created with [Badge Generator](https://michaelcurrin.github.io/badge-generator/badge-generator)._
+
+
+## Preview
+
+<div align="center">
+    <a href="https://michaelcurrin.github.io/single-page-app-vanilla-js/">
+        <img src="/sample.png" alt="Sample screenshot" width="700" title="Go to website">
+    </a>
+</div>
 
 <div align="center">
 
 [![View site GH Pages](https://img.shields.io/badge/View_site-GH_Pages-2ea44f?style=for-the-badge)](https://michaelcurrin.github.io/single-page-app-vanilla-js/)
 
 </div>
-
-_Badges created with [Badge Generator](https://michaelcurrin.github.io/badge-generator/badge-generator)._
 
 
 ## About
@@ -38,7 +46,7 @@ Open the browser at your localhost URL _without_ a subpath. e.g.
 
 - https://localhost:5500
 
-The pages are served under this subpath, but unfortunately you can't head here directly, because of how this app's routing works, when setup to run for GH Pages.
+The pages are served under this subpath. But unfortunately you cannot go there directly, because of how this app's routing works, when set up to run for GH Pages.
 
 - http://localhost:8000/single-page-app-vanilla-js/
 
@@ -61,7 +69,6 @@ This repo is forked from [dcode-youtube/single-page-app-vanilla-js](https://gith
 Regarding my contributions on my fork, I improved the posts section, added to the docs and changed up the routing so app can run on a project subpath on GitHub Pages. This last part involved moving all content to the project root or `static` directory and using the project name as prefix in all URLs, to match what GH Pages will do expect (e.g. `/posts` needs to be `/single-page-app-vanilla-js/posts`).
 
 I also removed use Express and `server.js` since I documented an alternate way of serving the project locally, without an `npm install` step.
-
 
 ### Project name
 
