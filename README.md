@@ -8,7 +8,9 @@
 
 _Badges created with [Badge Generator](https://michaelcurrin.github.io/badge-generator/badge-generator)._
 
-This template can be used to generate a site or for interest to look at the code. But this is not being maintained. See [Notes](#notes) for more info.
+This template can be used to generate a site, or for interest to look at the code to understand the fundamentals of what a SPA like React or Vue does for you internally.
+
+But this is not being developed further or maintained. See [Notes](#notes) for more info.
 
 
 ## Preview
