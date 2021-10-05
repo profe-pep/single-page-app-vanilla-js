@@ -34,10 +34,18 @@ There are no dependencies. You don't even need Node.
 
 The site is served as static site on [GitHub Pages](https://pages.github.com/). There is no build step. Just static assets - [index.html](/index.html) and the [static](/static/) directory. Unfortunately, on GH Pages you have to serve from the project root or `docs`, otherwise this app would have been added to a folder like `public` or `frontend`.
 
-See also related projects which are SPAs and have no build step.
+
+## Related projects
+
+SPA templates that also have no Node or build step:
 
 - https://github.com/MichaelCurrin/react-frontend-quickstart 
 - https://github.com/MichaelCurrin/vue-frontend-quickstart
+
+Traditional SPA app templates:
+
+- https://github.com/MichaelCurrin/react-quickstart 
+- https://github.com/MichaelCurrin/vue-quickstart
 
 
 ## Usage
@@ -51,14 +59,14 @@ Open the browser at your localhost URL _without_ a subpath. e.g.
 
 - https://localhost:5500
 
-The pages are served under this subpath. But unfortunately you cannot go there directly, because of how this app's routing works, when set up to run for GH Pages.
+The pages are served under this subpath. But unfortunately you cannot go there directly, because of how this app's routing works, when set up to run for GH Pages as subpath. If you set up with Netlify then you don't need the subpath.
 
 - http://localhost:8000/single-page-app-vanilla-js/
 
 
 ## Deploy
 
-Just copy this project as fork.
+Just copy this project using the template button. Don't bother forking unless you want to contribute changes back here.
 
 Deploy to GH Pages using your repo's Settings. There is no build step needed and so no GH Actions workflow.
 
@@ -87,11 +95,11 @@ See [Vanillin - Wikipedia](https://en.wikipedia.org/wiki/Vanillin) page.
 
 ### Limitations
 
-There are some limitations. Like refreshing a page or inputting a valid path manually in the address bar will give a error result. So maybe sure to start off from the root page each time and you make a change to the app locally. Some routing on a local static server or Netlity could fix this.
+There are some limitations. 
 
-Also there is no hot-reloading.
+Like refreshing a page or inputting a valid path manually in the address bar will give a error result. So maybe sure to start off from the root page each time and you make a change to the app locally. Some routing on a local static server (in SPA mode) or Netlify config can fix this.
 
-The dev experience could be improved by using an NPM server that handles these features better, though it would not match the intended prod environment of a static site.
+There is no hot-reloading with a basic static server but some provide this option for you.
 
 
 ## License
