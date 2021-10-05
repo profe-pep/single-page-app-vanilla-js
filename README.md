@@ -1,5 +1,5 @@
 # Vanillin
-> Single-Page App built with Node.js and no dependencies - GH Pages support added on this fork
+> Single-Page App built with JS and no dependencies - GH Pages support added on this fork
 
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/single-page-app-vanilla-js)](https://github.com/MichaelCurrin/single-page-app-vanilla-js/tags/?include_prereleases&sort=semver)
 [![License](https://img.shields.io/badge/License-MIT-blue)](#license)
@@ -30,11 +30,14 @@ This template can be used to generate a site or for interest to look at the code
 
 This app works with HTML, CSS and plain JS.
 
-There are no dependencies.
+There are no dependencies. You don't even need Node.
 
-The site is served as static site on [GitHub Pages](https://pages.github.com/).
+The site is served as static site on [GitHub Pages](https://pages.github.com/). There is no build step. Just static assets - [index.html](/index.html) and the [static](/static/) directory. Unfortunately, on GH Pages you have to serve from the project root or `docs`, otherwise this app would have been added to a folder like `public` or `frontend`.
 
-There is no build step. Just static assets - [index.html](/index.html) and the [static](/static/) directory. Unfortunately, on GH Pages you have to serve from the project root or `docs`, otherwise this app would have been added to a folder like `public` or `frontend`.
+See also related projects which are SPAs and have no build step.
+
+- https://github.com/MichaelCurrin/react-frontend-quickstart 
+- https://github.com/MichaelCurrin/vue-frontend-quickstart
 
 
 ## Usage
@@ -55,7 +58,9 @@ The pages are served under this subpath. But unfortunately you cannot go there d
 
 ## Deploy
 
-Just copy this project as fork and deploy to GH Pages using your repo's Settings. There is no build step needed and so no GH Actions workflow.
+Just copy this project as fork.
+
+Deploy to GH Pages using your repo's Settings. There is no build step needed and so no GH Actions workflow.
 
 View the deployed site:
 
@@ -82,7 +87,7 @@ See [Vanillin - Wikipedia](https://en.wikipedia.org/wiki/Vanillin) page.
 
 ### Limitations
 
-There are some limitations. Like refreshing a page or inputting a valid path manually in the address bar will give a error result. So maybe sure to start off from the root page each time and you make a change to the app locally.
+There are some limitations. Like refreshing a page or inputting a valid path manually in the address bar will give a error result. So maybe sure to start off from the root page each time and you make a change to the app locally. Some routing on a local static server or Netlity could fix this.
 
 Also there is no hot-reloading.
 
