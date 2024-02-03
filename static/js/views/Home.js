@@ -1,10 +1,12 @@
-import AbstractView from './AbstractView.js';
-import { u } from '../lib.js';
+import AbstractView from '../lib/AbstractView.js'
+import AppLayout from './layout/AppLayout.js'
+import { u } from '../lib/Helpers.js'
 
 export default class extends AbstractView {
   constructor(params) {
-    super(params);
-    this.setTitle('Home');
+    super(params)
+    this.setTitle('Home')
+    this.setLayout(AppLayout, 'app-content')
   }
 
   async getHtml() {
@@ -23,6 +25,6 @@ export default class extends AbstractView {
         <p>
           GitHub repo: <a href="https://github.com/michaelcurrin/single-page-app-vanilla-js">michaelcurrin/single-page-app-vanilla-js</a>.
         </p>
-    `;
+    `
   }
 }

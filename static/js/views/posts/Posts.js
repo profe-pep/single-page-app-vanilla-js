@@ -1,10 +1,12 @@
-import AbstractView from './AbstractView.js';
-import { u } from '../lib.js';
+import AbstractView from '../../lib/AbstractView.js'
+import AppLayout from '../layout/AppLayout.js'
+import { u } from '../../lib/Helpers.js'
 
 export default class extends AbstractView {
   constructor(params) {
-    super(params);
-    this.setTitle('Posts');
+    super(params)
+    this.setTitle('Posts')
+    this.setLayout(AppLayout, 'app-content')
   }
 
   async getHtml() {
@@ -20,6 +22,6 @@ export default class extends AbstractView {
           <a href="${u('/posts/2')}" data-link>#2 - How to build a GH Pages site</a>
         </li>
       </ul>
-    `;
+    `
   }
 }

@@ -26,10 +26,16 @@ body {
     background: rgba(255, 255, 255, 0.05);
 }
 
-#app {
+.content {
     margin: 2em;
     line-height: 1.5;
     font-weight: 500;
+}
+
+.footer {
+    margin: 2em;
+    padding: 2em;
+    background-color: #009579;
 }
 
 a {
