@@ -1,12 +1,12 @@
 {
-  "name": "vanillin",
+  "name": "vanillin_fork",
   "description": "Simple-Page App built with Node.js and no dependencies",
-  "homepage": "https://michaelcurrin.github.io/single-page-app-vanilla-js/",
+  "homepage": "https://jmirinformatica.github.io/2daw-m12-p2-s4-examples/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MichaelCurrin/single-page-app-vanilla-js"
+    "url": "https://github.com/jmirinformatica/2daw-m12-p2-s4-examples"
   },
-  "author": "MichaelCurrin",
+  "author": "jmirinformatica",
   "license": "MIT",
   "version": "0.1.0",
   "main": "index.js"
