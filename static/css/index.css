@@ -46,7 +46,8 @@ a {
 }
 
 .input {
-    width: 100%;
+    display: block;
+    width: 80%;
     padding: 1em;
     margin-bottom: 1em;
     font-family: inherit;

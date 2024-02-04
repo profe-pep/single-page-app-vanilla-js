@@ -1,7 +1,7 @@
 import AbstractView from '../../lib/View/AbstractView.js'
 import AppLayout from '../layout/AppLayout.js'
 import { u } from '../../lib/Helpers.js'
-import StoreModel from '../../models/StoreModel.js'
+import StoreService from '../../services/StoreService.js'
 
 export default class extends AbstractView {
   constructor(params) {
@@ -12,7 +12,7 @@ export default class extends AbstractView {
 
   async getHtml() {
     // Data
-    const stores = await StoreModel.all()
+    const stores = await StoreService.list()
     // Template
     return `
       <h1>Stores</h1>

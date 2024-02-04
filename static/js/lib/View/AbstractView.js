@@ -24,5 +24,11 @@ export default class {
     let template = this.layout ? this.layout : this
     document.querySelector(root).innerHTML = await template.getHtml()
     template.addEvents()
+    // Save last root selector to allow view refresh
+    this.root = root
+  }
+
+  async refresh() {
+    await this.render(this.root)
   }
 }

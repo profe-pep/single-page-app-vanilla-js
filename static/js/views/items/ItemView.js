@@ -1,6 +1,7 @@
 import AbstractView from '../../lib/View/AbstractView.js'
 import AppLayout from '../layout/AppLayout.js'
-import ItemModel from '../../models/ItemModel.js'
+import ItemService from '../../services/ItemService.js'
+import StoreService from '../../services/StoreService.js'
 
 export default class extends AbstractView {
   constructor(params) {
@@ -11,12 +12,13 @@ export default class extends AbstractView {
   }
 
   async getHtml() {
-    const item = await ItemModel.get(this.itemId)
+    const item = await ItemService.read(this.itemId)
+    const store = await StoreService.read(item.store_id)
     // Template
     return `
       <h1>Item #${item.id}</h1>
       <h2>${item.nom}</h2>
-      <h3>${item.store.nom}</h3>
+      <h3>${store.nom}</h3>
       <p>${item.unitats} u</p>
     `
   }

@@ -9,7 +9,7 @@ import ItemView from './views/items/ItemView.js'
 import Contact from './views/Contact.js'
 
 const routes = [
-  { path: u('/'), view: Home },
+  { path: u('/'), view: ItemsList /*Home*/ },
   { path: u('/stores'), view: StoresList },
   { path: u('/stores/:id'), view: StoreView },
   { path: u('/items'), view: ItemsList },
