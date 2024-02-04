@@ -1,4 +1,4 @@
-import AbstractView from '../lib/AbstractView.js'
+import AbstractView from '../lib/View/AbstractView.js'
 import AppLayout from './layout/AppLayout.js'
 import config from '../config.js'
 

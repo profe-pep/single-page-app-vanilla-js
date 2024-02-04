@@ -1,4 +1,4 @@
-import AbstractView from '../../lib/AbstractView.js'
+import AbstractView from '../../lib/View/AbstractView.js'
 import { u } from '../../lib/Helpers.js'
 
 export default class extends AbstractView {

@@ -1,4 +1,4 @@
-import Layout from '../../lib/AbstractLayout.js'
+import Layout from '../../lib/View/AbstractLayout.js'
 import Header from './Header.js'
 import Footer from './Footer.js'
 
