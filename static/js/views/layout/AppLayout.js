@@ -6,7 +6,11 @@ export default class extends Layout {
   constructor(root) {
     super(root)
     // Header
-    this.addSection('app-header')
+    let header = this.createSection('header', {
+      'id': 'app-header',
+      'class': 'header'
+    })
+    this.addSection('app-header', header)
     this.addViewToSection(new Header(), 'app-header')
     // Dynamic content
     let content = this.createSection('div', {
@@ -15,7 +19,11 @@ export default class extends Layout {
     })
     this.addSection('app-content', content)
     // Footer
-    this.addSection('app-footer')
+    let footer = this.createSection('footer', {
+      'id': 'app-footer',
+      'class': 'footer'
+    })
+    this.addSection('app-footer', footer)
     this.addViewToSection(new Footer(), 'app-footer')
   }
 }

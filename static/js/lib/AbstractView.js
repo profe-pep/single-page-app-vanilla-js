@@ -8,7 +8,6 @@ export default class {
   }
 
   setLayout(layout, sectionId) {
-    // Clone layout to avoid modifying original one
     this.layout = new layout()
     this.layout.addViewToSection(this, sectionId)
   }

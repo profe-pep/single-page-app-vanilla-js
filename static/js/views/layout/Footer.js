@@ -8,9 +8,7 @@ export default class extends AbstractView {
   
   async getHtml() {
     return `
-      <footer id="app-footer" class="footer">
-        <p>Problemes, suggeriments? Ves al nostre <a href="${u('/contact')}">formulari de contacte</a>.</p>
-      </footer>
+      <p>Problemes, suggeriments? Ves al nostre <a href="${u('/contact')}">formulari de contacte</a>.</p>
     `
   }
 }

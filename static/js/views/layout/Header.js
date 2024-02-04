@@ -8,22 +8,24 @@ export default class extends AbstractView {
   
   async getHtml() {
     return `
-      <header id="app-header" class="header">
-        <nav class="nav">
-            <a href="${u('/')}"
-                class="nav__link" data-link>
-                Home
-            </a>
-            <a href="${u('/posts')}"
-                class="nav__link" data-link>
-                Posts
-            </a>
-            <a href="${u('/contact')}"
-                class="nav__link" data-link>
-                Settings
-            </a>
-        </nav>
-      </header>
+      <nav class="nav">
+          <a href="${u('/')}"
+              class="nav__link" data-link>
+              Home
+          </a>
+          <a href="${u('/stores')}"
+              class="nav__link" data-link>
+              Stores
+          </a>
+          <a href="${u('/items')}"
+              class="nav__link" data-link>
+              Items
+          </a>
+          <a href="${u('/contact')}"
+              class="nav__link" data-link>
+              Contact
+          </a>
+      </nav>
     `   
   }
 }
