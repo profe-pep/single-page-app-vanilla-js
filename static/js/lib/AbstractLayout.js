@@ -34,6 +34,14 @@ export default class {
     }
   }
 
+  addEvents() {
+    for (let s in this.sections) {
+      for (let v = 0; v < this.sections[s].childs.length; v++) {
+        this.sections[s].childs[v].addEvents()
+      }
+    }
+  }
+
   async getHtml() {
     let html = ''
     for (let s in this.sections) {
@@ -53,9 +61,5 @@ export default class {
       }
     }
     return html
-  }
-
-  async render(root) {
-    document.querySelector(root).innerHTML = await this.getHtml()
   }
 }

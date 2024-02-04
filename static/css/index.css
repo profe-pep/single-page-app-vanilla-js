@@ -33,11 +33,31 @@ body {
 }
 
 .footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
     margin: 2em;
     padding: 2em;
-    background-color: #009579;
+    background-color: #ddd;
 }
 
 a {
     color: #009579;
+}
+
+.input {
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1em;
+    font-family: inherit;
+}
+
+.button {
+    color: #fff;
+    background-color: #009579;
+    border: 0;
+    padding: 1em;
+    font-weight: bold;
+    font-family: inherit;
+    cursor: pointer;
 }

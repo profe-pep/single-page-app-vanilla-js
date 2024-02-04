@@ -12,12 +12,17 @@ export default class {
     this.layout.addViewToSection(this, sectionId)
   }
 
+  addEvents() {
+
+  }
+  
   async getHtml() {
     return ''
   }
 
   async render(root) {
-    let base = this.layout ? this.layout : this
-    document.querySelector(root).innerHTML = await base.getHtml()
+    let template = this.layout ? this.layout : this
+    document.querySelector(root).innerHTML = await template.getHtml()
+    template.addEvents()
   }
 }

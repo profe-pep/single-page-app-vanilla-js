@@ -2,14 +2,14 @@ import { u } from './lib/Helpers.js'
 import createRouter from './lib/Router.js'
 
 import Home from './views/Home.js'
-import Posts from './views/posts/Posts.js'
-import PostView from './views/posts/PostView.js'
+import StoresList from './views/stores/StoresList.js'
+import ItemsList from './views/items/ItemsList.js'
 import Contact from './views/Contact.js'
 
 const routes = [
   { path: u('/'), view: Home },
-  { path: u('/posts'), view: Posts },
-  { path: u('/posts/:id'), view: PostView },
+  { path: u('/stores'), view: StoresList },
+  { path: u('/items'), view: ItemsList },
   { path: u('/contact'), view: Contact }
 ]
 

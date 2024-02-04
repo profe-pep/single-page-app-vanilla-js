@@ -8,7 +8,7 @@ export default class extends AbstractView {
   
   async getHtml() {
     return `
-      <p>Problemes, suggeriments? Ves al nostre <a href="${u('/contact')}">formulari de contacte</a>.</p>
+      <p>Problems? Suggestions? <a href="${u('/contact')}" data-link>Contact us</a>.</p>
     `
   }
 }
