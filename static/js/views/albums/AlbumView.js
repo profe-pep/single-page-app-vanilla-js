@@ -11,20 +11,19 @@ export default class extends AbstractView {
     this.albumId = params.id
     this.setTitle('Album')
     this.setLayout(AppLayout, 'app-content')
+    this.addComponent('#album-photos', new PhotoList({ 'albumId': this.albumId }))
   }
 
   async getHtml() {
     // Data
     const album = await AlbumService.read(this.albumId)
     const user = await UserService.read(album.userId)
-    const photoListView = new PhotoList({ 'albumId': this.albumId }, false)
-    const photosHTML = await photoListView.getHtml()
     // Template
     return `
       <h1>Album #${album.id}</h1>
       <h2>${album.title}</h2>
       <p>Author <a href="${u('/users/' + user.id)}" data-link>${user.username}</a></p>
-      ${photosHTML}
+      <div id="album-photos"></div>
     ` 
   }
 }

@@ -5,7 +5,7 @@ export default class extends AbstractService {
   static collection = []
   static increment = 0
   
-  static async list(filters={}, page=1, pageSize=20) {
+  static async list(filters={}, page=1, pageSize=50) {
     // Filter
     const filteredCollection = this.collection.filter(function (item) {
       for (const attr in filters) {

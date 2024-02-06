@@ -10,20 +10,20 @@ export default class extends Layout {
       'id': 'app-header',
       'class': 'header'
     })
-    this.addSection('app-header', header)
-    this.addViewToSection(new Header(), 'app-header')
+    this.addSection(header.id, header)
+    this.addViewToSection(new Header(), header.id)
     // Dynamic content
     let content = this.createSection('div', {
       'id': 'app-content',
       'class': 'content'
     })
-    this.addSection('app-content', content)
+    this.addSection(content.id, content)
     // Footer
     let footer = this.createSection('footer', {
       'id': 'app-footer',
       'class': 'footer'
     })
-    this.addSection('app-footer', footer)
-    this.addViewToSection(new Footer(), 'app-footer')
+    this.addSection(footer.id, footer)
+    this.addViewToSection(new Footer(), footer.id)
   }
 }

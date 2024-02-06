@@ -15,22 +15,22 @@ export default class {
     return element
   }
 
-  addSection(sectionId, parent = null) {
-    if (!this.sections[sectionId]) {
-      this.sections[sectionId] = {
+  addSection(selector, parent = null) {
+    if (!this.sections[selector]) {
+      this.sections[selector] = {
         parent: parent,
         childs: []
       }
     } else {
-      throw new Exception('Section already exists')
+      throw 'Section already added'
     }
   }
 
-  addViewToSection(view, sectionId) {
-    if (this.sections[sectionId]) {
-      this.sections[sectionId].childs.push(view)
+  addViewToSection(view, selector) {
+    if (this.sections[selector]) {
+      this.sections[selector].childs.push(view)
     } else {
-      throw new Exception('Section does not exists')
+      throw 'Section does not exists'
     }
   }
 
