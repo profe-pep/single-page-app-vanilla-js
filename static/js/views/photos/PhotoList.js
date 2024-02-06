@@ -9,7 +9,7 @@ export default class extends AbstractView {
     super(params)
     this.setTitle('Photos')
     this.setLayout(AppLayout, 'app-content')
-    this.addComponent('#create-item-form', new PhotoForm(params))
+    this.addComponent('#create-photo-form', new PhotoForm(params))
     this.showForm = showForm
   }
 
@@ -23,7 +23,7 @@ export default class extends AbstractView {
         photos.map(element => {
           return `
             <li>
-              <a href="${u('/photos/' + element.id)}" data-link>
+              <a href="${u('/photos/' + element.id + '/view')}" data-link>
                 <img src="${element.thumbnailUrl}" title="${element.title}"/>
               </a>
             </li>`
@@ -32,7 +32,7 @@ export default class extends AbstractView {
       (this.showForm 
         ? `
         <h2>Create photo</h2>
-        <div id="create-item-form"></div>` 
+        <div id="create-photo-form"></div>` 
         : ``)
   }
 }

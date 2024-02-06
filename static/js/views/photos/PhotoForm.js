@@ -9,17 +9,17 @@ export default class extends AbstractView {
     super(params)
     this.setTitle('Photo form')
   }
-  
+
   addEvents() {
     const view = this
-    document.querySelector('#item-form').addEventListener("submit", function (e) {
+    document.querySelector('#photo-form').addEventListener("submit", function (e) {
       e.preventDefault()
       const data = new FormData(e.target);
       const photo = Object.fromEntries(data.entries())
       console.log(photo)
       if (photo.id) {
         // Update
-        PhotoService.update(photo)
+        PhotoService.update(photo.id, photo)
       } else {
         // Create
         let color = randomHexColor()
@@ -35,19 +35,19 @@ export default class extends AbstractView {
     // Data
     const albums = await AlbumService.list()
     const photo = this.params.id 
-      ? await PhotoService.list(this.params.id) 
+      ? await PhotoService.read(this.params.id) 
       : PhotoService.factory()
 
     // Template
     return `
-      <form id="item-form" action="#">` +
+      <form id="photo-form" action="#">` +
       (photo.id
         ? `<input type="hidden" name="id" value="${photo.id}" required />`
         : ``) + 
-        `<input type="text" class="input" name="title" value="${photo.title}" required />` +
+        `<input type="text" class="input" name="title" placeholder="Photo title" value="${photo.title}" required />` +
       (this.params.albumId 
         ? `
-          <input type="hidden" name="albumId" value="${this.params.albumId }" required />
+          <input type="hidden" name="albumId" value="${ this.params.albumId }" required />
         `
         : `
           <select class="input" name="albumId">` +

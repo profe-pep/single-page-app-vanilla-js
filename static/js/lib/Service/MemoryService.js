@@ -39,7 +39,9 @@ export default class extends AbstractService {
     for (let i = 0; i < this.collection.length; i++) {
       let element = this.collection[i];
       if (element.id == id) {
-        this.collection[i] = data
+        for (const attr in data) {
+          this.collection[i][attr] = data[attr]
+        }
         return data
       }
     }
@@ -50,7 +52,7 @@ export default class extends AbstractService {
     for (let i = 0; i < this.collection.length; i++) {
       let element = this.collection[i];
       if (element.id == id) {
-        delete collection[i]
+        delete this.collection[i]
         return true
       }
     }

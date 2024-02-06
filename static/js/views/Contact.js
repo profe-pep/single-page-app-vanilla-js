@@ -1,6 +1,7 @@
 import AbstractView from '../lib/View/AbstractView.js'
 import config from '../config.js'
 import { router } from '../index.js'
+import { u } from '../lib/Helpers.js'
 
 export default class extends AbstractView {
   constructor(params) {
@@ -19,7 +20,7 @@ export default class extends AbstractView {
     document.querySelector('#contact-form').addEventListener("click", function (e) {
       e.preventDefault()
       console.log('Back to home')
-      router.navigateTo('/')
+      router.navigateTo(u('/'))
     })
   }
   

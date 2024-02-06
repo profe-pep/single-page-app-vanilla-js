@@ -18,9 +18,11 @@ export default class extends AbstractView {
     // Template
     return `
       <h1>Photo #${photo.id}</h1>
-      <img src="${photo.url}"/>
+      <img src="${photo.url}" width="300px" height="300px" />
       <h2>${photo.title}</h2>
       <p>From album <a href="${u('/albums/' + album.id)}" data-link>${album.title}</a></p>
+      <a class="button button" href="${u('/photos/' + photo.id + '/edit')}" data-link>Edit</a>
+      <a class="button button-danger" href="${u('/photos/' + photo.id + '/delete')}" data-link>Delete</a>
     `
   }
 }
