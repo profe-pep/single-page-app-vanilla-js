@@ -1,4 +1,7 @@
 export default function createRouter(root, routes) {
+
+  var lastView = null
+
   const pathToRegex = path =>
     new RegExp('^' + path.replace(/\//g, '\\/').replace(/:\w+/g, '(.+)') + '$')
 
@@ -47,8 +50,13 @@ export default function createRouter(root, routes) {
       }
     }
 
-    const view = new match.route.view(getParams(match))
-    await view.render(root)
+    lastView = new match.route.view(getParams(match))
+    await lastView.render(root)
+  }
+  
+  const refresh = async () => {
+    if (lastView)
+      await lastView.render(root)
   }
 
   window.addEventListener('popstate', router)
@@ -71,6 +79,7 @@ export default function createRouter(root, routes) {
 
   return {
     router: router,
-    navigateTo: navigateTo
+    navigateTo: navigateTo,
+    refresh: refresh
   }
 }
