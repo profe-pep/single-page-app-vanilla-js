@@ -13,13 +13,13 @@ export default class extends AbstractView {
               class="nav__link" data-link>
               Home
           </a>
-          <a href="${u('/stores')}"
+          <a href="${u('/albums')}"
               class="nav__link" data-link>
-              Stores
+              Albums
           </a>
-          <a href="${u('/items')}"
+          <a href="${u('/photos')}"
               class="nav__link" data-link>
-              Items
+              Photos
           </a>
           <a href="${u('/contact')}"
               class="nav__link" data-link>

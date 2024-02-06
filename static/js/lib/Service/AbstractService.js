@@ -2,7 +2,7 @@ export default class {
   
   constructor() { }
 
-  static async list() {
+  static async list(filters = {}, page = 1, pageSize = 20) {
     return []
   }
 

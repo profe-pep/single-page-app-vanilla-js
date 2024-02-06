@@ -33,9 +33,6 @@ body {
 }
 
 .footer {
-    position: fixed;
-    bottom: 0;
-    right: 0;
     margin: 2em;
     padding: 2em;
     background-color: #ddd;
@@ -43,6 +40,13 @@ body {
 
 a {
     color: #009579;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1%;
+    list-style-type: none;
 }
 
 .input {
@@ -58,7 +62,13 @@ a {
     background-color: #009579;
     border: 0;
     padding: 1em;
-    font-weight: bold;
+    font-weight: bolder;
     font-family: inherit;
     cursor: pointer;
+}
+
+.button-cancel {
+    background-color: #ddd;
+    color: #333;
+    font-weight: normal;
 }

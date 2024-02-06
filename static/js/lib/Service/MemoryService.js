@@ -5,8 +5,17 @@ export default class extends AbstractService {
   static collection = []
   static increment = 0
   
-  static async list() {
-    return this.collection
+  static async list(filters={}, page=1, pageSize=20) {
+    // Filter
+    const filteredCollection = this.collection.filter(function (item) {
+      for (const attr in filters) {
+        if (item[attr] != filters[attr])
+          return false
+      } 
+      return true
+    });
+    // Pagination
+    return filteredCollection.slice((page - 1) * pageSize, page * pageSize);
   }
 
   static async create(data) {
