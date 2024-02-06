@@ -1,12 +1,11 @@
 import AbstractView from '../lib/View/AbstractView.js'
-import AppLayout from './layout/AppLayout.js'
 import config from '../config.js'
+import { router } from '../index.js'
 
 export default class extends AbstractView {
   constructor(params) {
     super(params)
     this.setTitle('Contact')
-    this.setLayout(AppLayout, 'app-content')    
   }
 
   addEvents() {
@@ -17,8 +16,13 @@ export default class extends AbstractView {
       console.log(obj)
       alert(`Hola ${obj.name}!`)
     });
+    document.querySelector('#contact-form').addEventListener("click", function (e) {
+      e.preventDefault()
+      console.log('Back to home')
+      router.navigateTo('/')
+    })
   }
-
+  
   async getHtml() {
     return `
       <h1>Contact</h1>
@@ -28,6 +32,7 @@ export default class extends AbstractView {
         <input class="input" type="email" name="email" placeholder="Your e-mail" required />
         <textarea class="input" name="message" placeholder="Your message" required></textarea>
         <button class="button" type="submit">Send</button>
+        <button class="button button-cancel" type="reset" id="back">Back to home</button>
       <form>
     `
   }
