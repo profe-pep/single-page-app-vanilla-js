@@ -58,6 +58,11 @@ export default function createRouter(root, routes) {
       if (e.target.matches('[data-link]')) {
         e.preventDefault()
         navigateTo(e.target.href)
+      } else if (e.target.parentNode.tagName.toLowerCase() == 'a' && 
+        e.target.parentNode.matches('[data-link]')) {
+        // FIX links with image or span elements inside
+        e.preventDefault()
+        navigateTo(e.target.parentNode.href)
       }
     })
 
