@@ -1,6 +1,8 @@
 export default class {
   
-  constructor() { }
+  static factory() {
+    return {}
+  }
 
   static async list(filters = {}, page = 1, pageSize = 50) {
     return []

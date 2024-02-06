@@ -237,4 +237,31 @@ export default class extends MemoryService {
     ]
   
   static increment = 10
+
+  static factory() {
+    return {
+      "id": 0,
+      "name": "",
+      "username": "",
+      "email": "",
+      "address": {
+        "street": "",
+        "suite": "",
+        "city": "",
+        "zipcode": "",
+        "geo": {
+          "lat": "",
+          "lng": ""
+        }
+      },
+      "phone": "",
+      "website": "",
+      "company": {
+        "name": "",
+        "catchPhrase": "",
+        "bs": ""
+      }
+    }
+  }
+
 }

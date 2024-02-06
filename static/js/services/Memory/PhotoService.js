@@ -35007,4 +35007,15 @@ export default class extends MemoryService {
     ]
 
   static increment = 5001
+
+  static factory() {
+    return  {
+      "albumId": 0,
+      "id": 0,
+      "title": "",
+      "url": "",
+      "thumbnailUrl": ""
+    }
+  }
+
 }

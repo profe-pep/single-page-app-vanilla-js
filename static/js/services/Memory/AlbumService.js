@@ -507,4 +507,12 @@ export default class extends MemoryService {
     ]
 
   static increment = 100
+
+  static factory() {
+    return {
+      "userId": 0,
+      "id": 0,
+      "title": ""
+    }
+  }  
 }
