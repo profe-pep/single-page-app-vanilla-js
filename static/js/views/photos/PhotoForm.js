@@ -1,8 +1,7 @@
 import AbstractView from '../../lib/View/AbstractView.js'
 import { randomImageUrl, randomHexColor } from '../../lib/Helpers.js'
 import { router } from '../../index.js'
-import PhotoService from '../../services/Memory/PhotoService.js'
-import AlbumService from '../../services/Memory/AlbumService.js'
+import { PhotoService, AlbumService } from '../../services/MemoryServices.js'
 
 export default class extends AbstractView {
   constructor(params) {
@@ -20,12 +19,14 @@ export default class extends AbstractView {
       if (photo.id) {
         // Update
         PhotoService.update(photo.id, photo)
+        alert("Photo successfully updated")
       } else {
         // Create
         let color = randomHexColor()
         photo['url'] = randomImageUrl(600, color)
         photo['thumbnailUrl'] = randomImageUrl(150, color)
         PhotoService.create(photo)
+        alert("Photo successfully created")
       }
       router.refresh()
     });

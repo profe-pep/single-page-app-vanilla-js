@@ -1,6 +1,6 @@
 import AbstractView from '../../lib/View/AbstractView.js'
 import AppLayout from '../layout/AppLayout.js'
-import UserService from '../../services/Memory/UserService.js'
+import { AlbumService, UserService } from '../../services/MemoryServices.js'
 import AlbumList from '../albums/AlbumList.js'
 
 export default class extends AbstractView {

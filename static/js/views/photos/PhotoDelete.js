@@ -1,6 +1,6 @@
 import AbstractView from '../../lib/View/AbstractView.js'
 import AppLayout from '../layout/AppLayout.js'
-import PhotoService from '../../services/Memory/PhotoService.js'
+import { PhotoService } from '../../services/MemoryServices.js'
 import { router } from '../../index.js'
 import { u } from '../../lib/Helpers.js'
 
@@ -18,6 +18,7 @@ export default class extends AbstractView {
       const photo = Object.fromEntries(data.entries())
       console.log(photo)
       PhotoService.delete(photo.id)
+      alert("Photo successfully deleted")
       console.log('Back to photos list')
       router.navigateTo(u('/photos'))
     });
