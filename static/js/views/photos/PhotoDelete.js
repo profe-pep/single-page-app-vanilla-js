@@ -1,6 +1,6 @@
 import AbstractView from '../../lib/View/AbstractView.js'
 import AppLayout from '../layout/AppLayout.js'
-import { PhotoService } from '../../services/MemoryServices.js'
+import { PhotoService } from '../../services/Services.js'
 import { router } from '../../index.js'
 import { u } from '../../lib/Helpers.js'
 

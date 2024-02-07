@@ -1,7 +1,7 @@
 import AbstractView from '../../lib/View/AbstractView.js'
 import AppLayout from '../layout/AppLayout.js'
 import { u } from '../../lib/Helpers.js'
-import { PhotoService } from '../../services/MemoryServices.js'
+import { PhotoService } from '../../services/Services.js'
 import PhotoForm from './PhotoForm.js'
 
 export default class extends AbstractView {
