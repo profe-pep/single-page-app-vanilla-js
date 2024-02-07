@@ -83,6 +83,6 @@ TODO
 
 ## License
 
-`a-vanilla` branch is forked from [michaelcurrin/single-page-app-vanilla-js](https://michaelcurrin.github.io/single-page-app-vanilla-js/) which is licensed under [MIT](/LICENSE). 
+`a-vanillajs` branch is forked from [michaelcurrin/single-page-app-vanilla-js](https://michaelcurrin.github.io/single-page-app-vanilla-js/) which is licensed under [MIT](/LICENSE). 
 
 Other branches mantain same license. 
