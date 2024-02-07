@@ -1,5 +1,5 @@
-# Vanillin fork
-> Single-Page App built with JS and no dependencies - GH Pages support added on this fork
+# Photo gallery SPA
+> Single-Page App (SPA)
 
 [![GitHub tag](https://img.shields.io/github/tag/jmirinformatica/2daw-m12-p2-s4-examples)](hhttps://github.com/jmirinformatica/2daw-m12-p2-s4-examples/tags)
 [![License](https://img.shields.io/badge/License-MIT-blue)](#license)
@@ -14,13 +14,24 @@ _Badges created with [Badge Generator](https://github.com/badges/shields)._
 
 ## About
 
-This app works with HTML, CSS and plain JS.
+Photo gallery SPA built with Vanilla JS and rebuilt with frameworks for learning purposes:
+
+ * `master` developed with Vanilla JS and [GH Pages](https://pages.github.com/) support (forked from [michaelcurrin/single-page-app-vanilla-js](https://michaelcurrin.github.io/single-page-app-vanilla-js/))
+ * [`a-vanillajs`](/jmirinformatica/2daw-m12-p2-s4-examples/tree/a-vanilla) extends `master` branch with [{JSON} Placeholder](https://jsonplaceholder.typicode.com/) free fake REST API services
+ * [`b-alpinejs`](/jmirinformatica/2daw-m12-p2-s4-examples/tree/b-alpinejs) developed with [Alpine.js](https://alpinejs.dev/) microframework
+ * [`c-preact`](/jmirinformatica/2daw-m12-p2-s4-examples/tree/c-preact) developed with [Preact](https://preactjs.com/) framework
+
+## Vanillin fork
+
+This repo is forked from [michaelcurrin/single-page-app-vanilla-js](https://michaelcurrin.github.io/single-page-app-vanilla-js/).
+
+The `master` and `a-vanillajs` branches work with HTML, CSS and plain JS like original repo.
 
 There are no dependencies. You don't even need Node.
 
 The site is served as static site on [GitHub Pages](https://pages.github.com/). There is no build step. Just static assets - [index.html](/index.html) and the [static](/static/) directory. Unfortunately, on GH Pages you have to serve from the project root or `docs`, otherwise this app would have been added to a folder like `public` or `frontend`.
 
-## Usage
+### Usage
 
 > How to run locally
 
@@ -36,24 +47,9 @@ Open the browser at your localhost URL _without_ a subpath. e.g.
 
 The pages are served under this subpath. But unfortunately you cannot go there directly, because of how this app's routing works, when set up to run for GH Pages as subpath. If you set up with Netlify then you don't need the subpath.
 
-## Deploy
+### Notes
 
-Just copy this project using the template button. Don't bother forking unless you want to contribute changes back here.
-
-Deploy to GH Pages using your repo's Settings. There is no build step needed and so no GH Actions workflow.
-
-View the deployed site:
-
-- https://jmirinformatica.github.io/2daw-m12-p2-s4-examples/
-
-
-## Notes
-
-### Background
-
-This repo is forked from [michaelcurrin/single-page-app-vanilla-js](https://michaelcurrin.github.io/single-page-app-vanilla-js/).
-
-### Limitations
+#### Limitations
 
 There are some limitations. 
 
@@ -61,6 +57,32 @@ Like refreshing a page or inputting a valid path manually in the address bar wil
 
 There is no hot-reloading with a basic static server but some provide this option for you.
 
+#### What's new?
+
+The fork includes some changes and new features:
+
+* The **configuration** has been moved to `config.js` file.
+* There is a new **service layer** independent from **view layer**
+* The original **library** (`lib.js` file) has been extended (see `lib` folder):
+
+  * `Service\ApiService.js` integrates REST API services (used in `a-vanillajs` branch)
+  * `Service\MemoryService.js` implements memory persistence (used in `master` branch)
+  * `View\AbstractLayout.js` creates view layout with sections
+  * `View\AbstractView.js` creates view with optional layout, components and events
+  * `Helpers.js` includes link helper and more
+  * `Router.js` includes router creation with `router`, `navigateTo` and `refresh` methods
+
+
+## Alpine JS
+
+TODO
+
+## Preact
+
+TODO
+
 ## License
 
-Forked from [michaelcurrin/single-page-app-vanilla-js](https://michaelcurrin.github.io/single-page-app-vanilla-js/) which is licensed under [MIT](/LICENSE).
+`a-vanilla` branch is forked from [michaelcurrin/single-page-app-vanilla-js](https://michaelcurrin.github.io/single-page-app-vanilla-js/) which is licensed under [MIT](/LICENSE). 
+
+Other branches mantain same license. 
