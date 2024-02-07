@@ -41,11 +41,5 @@ export default class {
     }
     // Add events after render
     template.addEvents()
-    // Save last root selector to allow view refresh
-    this.root = root
-  }
-
-  async refresh() {
-    await this.render(this.root)
   }
 }
