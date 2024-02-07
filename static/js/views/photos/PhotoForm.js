@@ -11,22 +11,22 @@ export default class extends AbstractView {
 
   addEvents() {
     const view = this
-    document.querySelector('#photo-form').addEventListener("submit", function (e) {
+    document.querySelector('#photo-form').addEventListener("submit", async function (e) {
       e.preventDefault()
       const data = new FormData(e.target);
       const photo = Object.fromEntries(data.entries())
       console.log(photo)
       if (photo.id) {
         // Update
-        PhotoService.update(photo.id, photo)
-        alert("Photo successfully updated")
+        let responseData = await PhotoService.update(photo.id, photo)
+        alert(`Photo ${responseData.id} successfully updated`)
       } else {
         // Create
         let color = randomHexColor()
         photo['url'] = randomImageUrl(600, color)
         photo['thumbnailUrl'] = randomImageUrl(150, color)
-        PhotoService.create(photo)
-        alert("Photo successfully created")
+        let responseData = await PhotoService.create(photo)
+        alert(`Photo ${responseData.id} successfully created`)
       }
       router.refresh()
     });

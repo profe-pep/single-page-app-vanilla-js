@@ -12,13 +12,13 @@ export default class extends AbstractView {
   }
 
   addEvents() {
-    document.querySelector('#delete-photo-form').addEventListener("submit", function (e) {
+    document.querySelector('#delete-photo-form').addEventListener("submit", async function (e) {
       e.preventDefault()
       const data = new FormData(e.target);
       const photo = Object.fromEntries(data.entries())
       console.log(photo)
-      PhotoService.delete(photo.id)
-      alert("Photo successfully deleted")
+      let responseData = await PhotoService.delete(photo.id)
+      alert(`Photo ${responseData.id} successfully deleted`)
       console.log('Back to photos list')
       router.navigateTo(u('/photos'))
     });
