@@ -1,7 +1,7 @@
 # Photo gallery SPA
 > Single-Page App (SPA)
 
-[![GitHub tag](https://img.shields.io/github/tag/jmirinformatica/2daw-m12-p2-s4-examples)](hhttps://github.com/jmirinformatica/2daw-m12-p2-s4-examples/tags)
+[![GitHub tag](https://img.shields.io/github/tag/profe-pep/single-page-app-vanilla-js)](https://github.com/profe-pep/single-page-app-vanilla-js/tags)
 [![License](https://img.shields.io/badge/License-MIT-blue)](#license)
 
 [![Hosted with GH Pages](https://img.shields.io/badge/Hosted_with-GitHub_Pages-blue?logo=github&logoColor=white)](https://pages.github.com/)
@@ -10,22 +10,19 @@ _Badges created with [Badge Generator](https://github.com/badges/shields)._
 
 ## Preview
 
-[![View site GH Pages](https://img.shields.io/badge/View_site-GH_Pages-2ea44f?style=for-the-badge)](https://jmirinformatica.github.io/2daw-m12-p2-s4-examples/)
+[![View site GH Pages](https://img.shields.io/badge/View_site-GH_Pages-2ea44f?style=for-the-badge)](https://profe-pep.github.io/single-page-app-vanilla-js/)
 
 ## About
 
-Photo gallery SPA built with Vanilla JS and rebuilt with frameworks for learning purposes:
+Photo gallery SPA built with Vanilla JS and [GH Pages](https://pages.github.com/) support.
 
- * `master` developed with Vanilla JS and [GH Pages](https://pages.github.com/) support (forked from [michaelcurrin/single-page-app-vanilla-js](https://michaelcurrin.github.io/single-page-app-vanilla-js/))
- * [`a-vanillajs`](/jmirinformatica/2daw-m12-p2-s4-examples/tree/a-vanilla) extends `master` branch with [{JSON} Placeholder](https://jsonplaceholder.typicode.com/) free fake REST API services
- * [`b-alpinejs`](/jmirinformatica/2daw-m12-p2-s4-examples/tree/b-alpinejs) developed with [Alpine.js](https://alpinejs.dev/) microframework
- * [`c-preact`](/jmirinformatica/2daw-m12-p2-s4-examples/tree/c-preact) developed with [Preact](https://preactjs.com/) framework
+`rest-api` branch uses [{JSON} Placeholder](https://jsonplaceholder.typicode.com/) free fake REST API services instead of memory persistence.
 
 ## Vanillin fork
 
-This repo is forked from [michaelcurrin/single-page-app-vanilla-js](https://michaelcurrin.github.io/single-page-app-vanilla-js/).
+This repo is forked from [michaelcurrin/single-page-app-vanilla-js](https://github.com/michaelcurrin/single-page-app-vanilla-js/).
 
-The `master` and `a-vanillajs` branches work with HTML, CSS and plain JS like original repo.
+This app works with HTML, CSS and plain JS like original repo.
 
 There are no dependencies. You don't even need Node.
 
@@ -72,17 +69,8 @@ The fork includes some changes and new features:
   * `Helpers.js` includes link helper and more
   * `Router.js` includes router creation with `router`, `navigateTo` and `refresh` methods
 
-
-## Alpine JS
-
-TODO
-
-## Preact
-
-TODO
-
 ## License
 
-`a-vanillajs` branch is forked from [michaelcurrin/single-page-app-vanilla-js](https://michaelcurrin.github.io/single-page-app-vanilla-js/) which is licensed under [MIT](/LICENSE). 
+Released under [MIT](/LICENSE)
 
-Other branches mantain same license. 
+Forked from [michaelcurrin/single-page-app-vanilla-js](https://michaelcurrin.github.io/single-page-app-vanilla-js/) which is licensed under MIT.
